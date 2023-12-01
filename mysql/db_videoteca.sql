@@ -27,3 +27,4 @@ CREATE TABLE contratto (
 SHOW TABLES;
 
 -- Inseriamo i dati
+INSERT 
