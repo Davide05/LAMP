@@ -1,4 +1,5 @@
 /**
+ * posizionarsi nella cartella /workspace/LAMP/TPSIT/xml_xpath/GIA' SVOLTO/
  * javac xml_xsl/ApplyXSLT.java 
  * java xml_xsl.ApplyXSLT
  */

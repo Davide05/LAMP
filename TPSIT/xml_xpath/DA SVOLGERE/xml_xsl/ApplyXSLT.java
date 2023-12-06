@@ -1,3 +1,8 @@
+/**
+ * posizionarsi nella cartella /workspace/LAMP/TPSIT/xml_xpath/DA SVOLGERE/
+ * javac xml_xsl/ApplyXSLT.java 
+ * java xml_xsl.ApplyXSLT
+ */
 package xml_xsl;
 
 import javax.xml.transform.*;
@@ -11,13 +16,13 @@ public class ApplyXSLT {
     public static void main(String[] args) {
         try {
             TransformerFactory factory = TransformerFactory.newInstance();
-            Source xslt = new StreamSource(new File("C:\\eclipse-workspace_2\\Socket2\\src\\xml_xsl\\maestri.xsl"));
+            Source xslt = new StreamSource(new File("studenti.xsl"));
             Transformer transformer = factory.newTransformer(xslt);
 
-            Source xml = new StreamSource(new File("C:\\eclipse-workspace_2\\Socket2\\src\\xml_xsl\\maestri.xml"));
-            transformer.transform(xml, new StreamResult(new File("C:\\eclipse-workspace_2\\Socket2\\src\\xml_xsl\\output.html")));
+            Source xml = new StreamSource(new File("studenti.xml"));
+            transformer.transform(xml, new StreamResult(new File("studenti.html")));
             try {
-                File xmlFile = new File("C:\\eclipse-workspace_2\\Socket2\\src\\xml_xsl\\output.html");
+                File xmlFile = new File("studenti.html");
                 if (xmlFile.exists() && Desktop.isDesktopSupported()) {
                     Desktop.getDesktop().open(xmlFile);
                 }
