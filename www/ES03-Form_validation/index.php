@@ -23,7 +23,7 @@
         <input name = "email" id = "email" type = "email" placeholder = "email" required><br><br>
         <!-- Numero di telefono -->
         <label> Inserisci il numero di telefono: </label><br>
-        <input name = "prefisso" id = "prefisso" type = "text" placeholder = "prefisso esempio: +39" pattern="\+[0-9]{1,4}">
+        <input name = "prefisso" id = "prefisso" type = "text" placeholder = "prefisso esempio:+39" pattern="\+[0-9]{2,4}">
         <input name = "numero" id = "numero" type = "text" placeholder = "numero" pattern="[0-9]{10}"><br><br>
         <!-- Via, cap, comune, provincia-->
         <label> Indirizzo: </label><br>
@@ -32,12 +32,17 @@
         <input name = "comune" id = "comune" type = "text" placeholder = "comune" required>
         <input name = "provincia" id = "provincia" type = "text" placeholder = "provincia" required><br><br>
         
-        <label> Inserisci il nickname: </label><br>
-        <input name = "nickname" id = "nickname" type = "text" placeholder = "nickname"><br>
-        <label> Inserisci la password: </label><br>
-        <input name = "password" id = "password" type = "password" placeholder = "password"><br><br>
-    
-        <input type = "submit" value = "ACCEDI"> <!-- pulsante di accedi -->
+        <label> Nickname: </label><br>
+        <input name = "nickname" id = "nickname" type = "text" placeholder = "davide"><br>
+        <label> Password: </label><br>
+        <input name = "password" id = "password" type = "password" placeholder = "Hu2005?"><br>
+        Password valida:
+        <br>- almeno 8 caratteri;
+        <br>- almeno una lettera maiuscola;
+        <br>- almeno un numero;
+        <br>- almeno un carattere speciale;<br><br>
+
+        <input type = "submit" value = "ACCEDI"> <!-- pulsante per accedere -->
     </form>
 </body>
 </html>
