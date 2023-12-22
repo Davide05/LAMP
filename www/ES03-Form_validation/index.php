@@ -35,7 +35,7 @@
         <label> Nickname: </label><br>
         <input name = "nickname" id = "nickname" type = "text" placeholder = "davide"><br>
         <label> Password: </label><br>
-        <input name = "password" id = "password" type = "password" placeholder = "Hu2005?"><br>
+        <input name = "password" id = "password" type = "password" placeholder = "Hu2005??"><br>
         Password valida:
         <br>- almeno 8 caratteri;
         <br>- almeno una lettera maiuscola;

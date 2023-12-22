@@ -69,7 +69,7 @@
             echo "<br>- almeno un numero";
             echo "<br>- almeno un carattere speciale<br>";
         } else {
-            echo "<br>Password valida<br>" . htmlspecialchars($password);
+            echo "<br>Password valido:<br>" . htmlspecialchars($password);
         }
     }
  ?>
