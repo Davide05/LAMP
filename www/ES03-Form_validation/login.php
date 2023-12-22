@@ -52,9 +52,9 @@
         }
         //controllo numero telefono
         if (!empty($numero)) {
-            echo "<br><br>Numero non valido<br>";
-        } else {
             echo "<br><br>Numero di telefono inserito correttamente:<br>" . htmlspecialchars($numero);
+        } else {
+            echo "<br><br>Numero non valido<br>";
         }
 
         if ($nickname === $nome || $nickname === $cog) {
