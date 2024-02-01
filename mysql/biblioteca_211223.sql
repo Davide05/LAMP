@@ -1,4 +1,5 @@
 -- Creazione del database
+--DROP DATABASE IF EXISTS Biblioteca
 CREATE DATABASE IF NOT EXISTS Biblioteca;
 USE Biblioteca;
 
