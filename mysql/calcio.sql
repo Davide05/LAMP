@@ -10,12 +10,12 @@ SHOW TABLES;
 -- Creazione della tabella "Calciatori"
 CREATE TABLE IF NOT EXISTS Calciatori (
 codice_giocatore int AUTO_INCREMENT PRIMARY KEY NOT NULL,
-cognome varchar, 
-ruolo int,
-stipendio int,
-data_nascita date,
-codice_voto int,
-codice_capitano int,
+cognome varchar(64), 
+ruolo INT,
+stipendio INT,
+data_nascita DATE,
+codice_voto INT,
+codice_capitano INT,
 );
 SHOW TABLES;
 
