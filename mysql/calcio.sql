@@ -15,7 +15,8 @@ stipendio INT,
 data_nascita DATE,
 codice_voto INT,
 codice_capitano INT,
-FOREIGN KEY(codice_squadra)REFERENCES Squadra(codice_squadra)
+FK_Squadra int,
+FOREIGN KEY(FK_Squadra)REFERENCES Squadra(codice_squadra)
 );
 
 -- Creazione della tabella "Valutazioni"
@@ -23,8 +24,8 @@ CREATE TABLE IF NOT EXISTS Valutazioni (
 codice_voto INT AUTO_INCREMENT PRIMARY KEY NOT NULL, 
 voto INT,
 data_partita INT,
-/*codice_giocatore INT,*/
-FOREIGN KEY(codice_voto)REFERENCES Calciatori(codice_giocatore)
+FK_Calciatore int,
+FOREIGN KEY(FK_Calciatore)REFERENCES Calciatori(codice_giocatore)
 );
 SHOW TABLES;
 
