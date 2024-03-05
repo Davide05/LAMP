@@ -5,6 +5,7 @@ CREATE TABLE  IF NOT EXISTS Squadra (
     codice_squadra INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     codice_capitano INT
 );
+SHOW TABLES;
 
 -- Creazione della tabella "Calciatori"
 CREATE TABLE IF NOT EXISTS Calciatori (
@@ -18,6 +19,7 @@ codice_capitano INT,
 FK_Squadra int,
 FOREIGN KEY(FK_Squadra)REFERENCES Squadra(codice_squadra)
 );
+SHOW TABLES;
 
 -- Creazione della tabella "Valutazioni"
 CREATE TABLE IF NOT EXISTS Valutazioni ( 
@@ -28,4 +30,3 @@ FK_Calciatore int,
 FOREIGN KEY(FK_Calciatore)REFERENCES Calciatori(codice_giocatore)
 );
 SHOW TABLES;
-
