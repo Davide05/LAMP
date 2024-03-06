@@ -2,7 +2,8 @@ CREATE DATABASE IF NOT EXISTS Calcio;
 USE Calcio;
 -- Creazione della tabella "Squadra"
 CREATE TABLE IF NOT EXISTS Squadra (
-    codice_squadra VARCHAR(64) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nome_squadra VARCHAR(64),
+    codice_squadra INT PRIMARY KEY NOT NULL,
     codice_capitano INT
 );
 SHOW TABLES;
@@ -47,4 +48,4 @@ WHERE cognome='Rossi';
 
 4)cancellare nella tabella quadre l'istanza con nome squadra=Verdi
 DELETE FROM Squadra
-WHERE codice_squadra='Verdi';
+WHERE nome_squadra='Verdi';
