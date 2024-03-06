@@ -2,8 +2,8 @@ CREATE DATABASE IF NOT EXISTS Calcio;
 USE Calcio;
 -- Creazione della tabella "Squadra"
 CREATE TABLE IF NOT EXISTS Squadra (
-    nome_squadra VARCHAR(64),
-    codice_squadra INT PRIMARY KEY NOT NULL,
+    nome_squadra VARCHAR(64) NOT NULL,
+    codice_squadra INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
     codice_capitano INT
 );
 SHOW TABLES;
