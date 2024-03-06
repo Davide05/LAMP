@@ -1,8 +1,8 @@
-CREATE Database IF NOT EXISTS Calcio;
+CREATE DATABASE IF NOT EXISTS Calcio;
 USE Calcio;
 -- Creazione della tabella "Squadra"
-CREATE TABLE  IF NOT EXISTS Squadra (
-    codice_squadra INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+CREATE TABLE IF NOT EXISTS Squadra (
+    codice_squadra VARCHAR(64) AUTO_INCREMENT PRIMARY KEY NOT NULL,
     codice_capitano INT
 );
 SHOW TABLES;
@@ -33,9 +33,18 @@ SHOW TABLES;
 
 /*
 1)modifica il campo calciatori, cambia la variabile di ruolo
-ALTER TABLE calciatori 
+ALTER TABLE Calciatori 
 CHANGE COLUMN ruolo ruolo VARCHAR(64);
 
 2)inserire istanza nella tabella calciatori
-INSERT INTO calciatori (ruolo)
+INSERT INTO Calciatori (ruolo)
 VALUES ('attaccante');
+
+3) modificare nella tabella calciatori il cognome Rossi con il cognome Bianchi
+UPDATE Calciatori
+SET cognome='Bianchi'
+WHERE cognome='Rossi';
+
+4)cancellare nella tabella quadre l'istanza con nome squadra=Verdi
+DELETE FROM Squadra
+WHERE codice_squadra='Verdi';
