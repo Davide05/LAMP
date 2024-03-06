@@ -49,3 +49,7 @@ WHERE cognome='Rossi';
 4)cancellare nella tabella quadre l'istanza con nome squadra=Verdi
 DELETE FROM Squadra
 WHERE nome_squadra='Verdi';
+
+5)produrre un elenco con i cognomi di tutti i calciatori aventi stipendio>10.000 oridnato su cognome
+6)visualizzare tuitte le informazioni dei calciatori che ricoporono ruolo 'terzino' oi 'portiere'
+7)visualzzare cognome di tutti i calciatori la cui lettera 2 del cognome è 'a' e lultima lettera è 'o'
