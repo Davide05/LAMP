@@ -30,3 +30,12 @@ FK_Calciatore int,
 FOREIGN KEY(FK_Calciatore)REFERENCES Calciatori(codice_giocatore)
 );
 SHOW TABLES;
+
+/*
+1)modifica il campo calciatori, cambia la variabile di ruolo
+ALTER TABLE calciatori 
+CHANGE COLUMN ruolo ruolo VARCHAR(64);
+
+2)inserire istanza nella tabella calciatori
+INSERT INTO calciatori (ruolo)
+VALUES ('attaccante');
