@@ -67,6 +67,8 @@ FROM calciatori
 WHERE cognome like '_a%o';
 
 8)produrre elenco con i cognomi dei calciatori seguiti dal nome della loro sqaudra solo per le squadre Napoli, Bologna, Verona (join con where)
+
+
 9)visualizzare qaunti calciatori sono nati prima del 2000
 10)visulaizzare solo una volta in rodijne crescente tutti i voti nella tabella valutazioni
 11)visualizzare il voto più alto, più basso e la media di tutti i voti della tabella valutazioni
