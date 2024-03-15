@@ -70,6 +70,8 @@ WHERE cognome like '_a%o';
 SELECT cognome, nome_squadra
 
 9)visualizzare qaunti calciatori sono nati prima del 2000
+
+
 10)visulaizzare solo una volta in rodijne crescente tutti i voti nella tabella valutazioni
 11)visualizzare il voto più alto, più basso e la media di tutti i voti della tabella valutazioni
 12)per ogni calciatore visulazziare il cognome seguito dal voto massimo, dal voto minimo e dalla media dei voti e da qaunti voti ha ottenuto nelle partite che ha disputato
