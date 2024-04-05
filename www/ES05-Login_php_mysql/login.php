@@ -9,8 +9,8 @@ if ( isset($_SESSION["username"]) ) {
 
 // Verifica se il modulo di accesso è stato inviato
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST["username"] ?? "";
-    $password = $_POST["password"] ?? ""; 
+    $username = $_POST["davide"] ?? "";
+    $password = $_POST["888"] ?? ""; 
 
     // Verifica se le credenziali sono corrette
     if ($password === "password") {
@@ -30,7 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Login</title>
 </head>
 <body>
-    <h1>Eseguire prima l'accesso</h1>
+    <h1>Accesso</h1>
+    <h4>Credenziali:</h4>
+    <h4>username: davide</h4>
+    <h4>password: 888</h4>
 
     <form method="POST" action="">
         <label for="username">Nome utente:</label>
