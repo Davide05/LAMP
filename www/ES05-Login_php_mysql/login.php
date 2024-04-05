@@ -30,8 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Login</title>
 </head>
 <body>
-    <h1>Accesso</h1>
-    <h3>Eseguire prima l'accesso</h3>
+    <h1>Eseguire prima l'accesso</h1>
 
     <form method="POST" action="">
         <label for="username">Nome utente:</label>
