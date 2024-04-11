@@ -9,11 +9,11 @@ if ( isset($_SESSION["username"]) ) {
 
 // Verifica se il modulo di accesso è stato inviato
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST["davide"] ?? "";
-    $password = $_POST["888"] ?? ""; 
+    $username = $_POST["username"] ?? "";
+    $password = $_POST["password"] ?? ""; 
 
     // Verifica se le credenziali sono corrette
-    if ($password === "password") {
+    if ($username === 'davide' && $password === "password") {
         // Credenziali corrette, crea una variabile di sessione per l'autenticazione
         $_SESSION["username"] = $username;
         header('Location: riservata.php');

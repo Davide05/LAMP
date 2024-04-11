@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
 // Verifica se l'utente è già autenticato e reindirizza alla pagina di benvenuto
 if ( isset($_SESSION["username"]) ) {
     header('Location: riservata.php');
