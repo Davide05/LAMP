@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-$conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
-
 // Verifica se l'utente è già autenticato e reindirizza alla pagina di benvenuto
 if ( isset($_SESSION["username"]) ) {
     header('Location: riservata.php');
@@ -11,13 +9,13 @@ if ( isset($_SESSION["username"]) ) {
 
 // Verifica se il modulo di accesso è stato inviato
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST["davide"] ?? "";
-    $password = $_POST["888"] ?? ""; 
+    $username = $_POST["username"] ?? "";
+    $password = $_POST["password"] ?? ""; 
 
     // Verifica se le credenziali sono corrette
-    if ($password === "888") {
+    if ($username === 'davide' && $password === "888") {
         // Credenziali corrette, crea una variabile di sessione per l'autenticazione
-        $_SESSION["daivde"] = $username;
+        $_SESSION["username"] = $username;
         header('Location: riservata.php');
         exit;
     } else {
