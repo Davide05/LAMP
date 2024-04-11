@@ -21,6 +21,8 @@ echo "Connessione al database riuscita";
 // Chiudere la connessione quando non è più necessaria
 mysqli_close($conn);
 
+
+
 // Verifica se l'utente è già autenticato e reindirizza alla pagina di benvenuto
 if ( isset($_SESSION["username"]) ) {
     header('Location: riservata.php');
