@@ -17,14 +17,13 @@ echo "-".$username."-".$password."<br>";
 $conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
 // Verifica della connessione
 if (!$conn) {die("Connessione fallita: " . mysqli_connect_error());}
-
-//echo "Connessione al database riuscita";
+echo "Connessione al database riuscita";
 
 // Esegui la query per verificare le credenziali dell'utente
 $query = "SELECT * FROM utente WHERE Username = '$username' AND Password = '$password';";
 $result = mysqli_query($conn, $query);
 echo "-".$query."<br>";
-//echo "-".$result."<br>";
+echo "-".$result."<br>";
 
 // Verifica se la query ha restituito risultati
 if (mysqli_num_rows($result) > 0) {
@@ -32,7 +31,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "Credenziali non valide. Riprova."; // L'utente non è autenticato
 }
-
 
 // Chiudere la connessione quando non è più necessaria
 mysqli_close($conn);
@@ -47,8 +45,8 @@ mysqli_close($conn);
     <h1>Accesso</h1>
     <?php if (isset($error_message)) echo '<p style="color: red;">' . $error_message . '</p>'; ?>
     <h4>Credenziali:</h4>
-    <h4>username: davide</h4>
-    <h4>password: 888</h4>
+    <h4>username: admin</h4>
+    <h4>password: admin</h4>
 
     <form method="POST" action="">
         <label for="username">Nome utente:</label>
