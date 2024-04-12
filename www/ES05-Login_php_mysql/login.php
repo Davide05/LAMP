@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $error_message = 'Credenziali non valide. Riprova.';
     }*/
-}
+//}
 ?>
 
 <!DOCTYPE html>
