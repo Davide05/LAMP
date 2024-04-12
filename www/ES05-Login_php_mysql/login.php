@@ -17,13 +17,13 @@ echo "-".$username."-".$password."<br>";
 $conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
 // Verifica della connessione
 if (!$conn) {die("Connessione fallita: " . mysqli_connect_error());}
-echo "Connessione al database riuscita";
+echo "Connessione al database riuscita-";
 
 // Esegui la query per verificare le credenziali dell'utente
 $query = "SELECT * FROM utente WHERE Username = '$username' AND Password = '$password';";
 $result = mysqli_query($conn, $query);
 echo "-".$query."<br>";
-echo "-".$result."<br>";
+//echo "-".$result."<br>";
 
 // Verifica se la query ha restituito risultati
 if (mysqli_num_rows($result) > 0) {
