@@ -37,28 +37,7 @@ if (mysqli_num_rows($result) > 0) {
 // Chiudere la connessione quando non è più necessaria
 mysqli_close($conn);
 
-/*
-// Verifica se l'utente è già autenticato e reindirizza alla pagina di benvenuto
-if (isset($_SESSION["username"])) {
-    header('Location: riservata.php');
-    exit;
-}
 
-// Verifica se il modulo di accesso è stato inviato
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST["username"] ?? "";
-    $password = $_POST["password"] ?? ""; 
-
-    // Verifica se le credenziali sono corrette (Questo è solo un esempio dimostrativo)
-    if ($username === 'davide' && $password === "888") {
-        // Credenziali corrette, crea una variabile di sessione per l'autenticazione
-        $_SESSION["username"] = $username;
-        header('Location: riservata.php');
-        exit;
-    } else {
-        $error_message = 'Credenziali non valide. Riprova.';
-    }*/
-//}
 ?>
 
 <!DOCTYPE html>
