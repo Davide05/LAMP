@@ -1,5 +1,26 @@
 <?php
 session_start();
+// Definizione delle costanti per la connessione al database
+define('DB_SERVER', 'localhost');
+define('DB_NAME', 'nome_database');
+define('DB_USER', 'nome_utente');
+define('DB_PASSWORD', 'password');
+
+try {
+  // Connessione al database
+  $pdo = new PDO("mysql:host=".DB_SERVER.";dbname=".DB_NAME, DB_USER, DB_PASSWORD);
+  // Impostazione della modalità di gestione degli errori
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+  // Gestione dell'eccezione
+  echo "Errore di connessione: " . $e->getMessage();
+  exit;
+}
+// Il codice seguente può utilizzare l'oggetto $pdo per effettuare query al database
+// ...
+
+// Chiudi la connessione al database
+$pdo = null;
 
 // Verifica se l'utente è già autenticato e reindirizza alla pagina di benvenuto
 if (isset($_SESSION["username"])) {
