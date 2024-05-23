@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Navigator Windows</title>
+</head>
+<body>
+	<h1>modificare il colore e lo sfondo dei pulsanti presenti nella pagina</h1>
+
+    <button>Pulsante1</button>
+    <button style="color: blue; background-color: aliceblue; border-radius: 20%; border-color: blueviolet;">Pulsante2</button>
+    <button id="p3">Pulsante3</button>
+
+    <br><br>
+    <input type="text" name="nomeCasella" value="Contenuto" size="20" maxlength="20">
+
+     <!--modificare il colore e lo sfondo dei pulsanti presenti nella pagina-->
+    <script> 
+        console.log("Esercizio c");
+        const pulsanti = document.getElementsByTagName("button");
+        const p1 = pulsanti[0];
+        const p3 = document.getElementById("p3");
+        p1.style = "color: red; background-color: orange; border-color: yellow;"
+        
+        console.log("Esercizio d");
+        let valore_casella ="prova"  //inizializzare
+        let valore_maiusc = valore_casella.toUpperCase();
+        p3.innerText = valore_maiusc
+        //
+
+        /*
+        p1.addEventListener('mouseover', function() {
+            p1.style ="background-color: blue;";
+        })
+        p1.addEventListener('mouseout', function() {
+            p1.style ="background-color: yellow;";
+        })
+        */
+
+    </script>
+</body>
+</html>
